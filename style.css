@@ -1,100 +1,242 @@
 body {
-  background-color: rgb(242, 249, 255);
-  font-family: 'Rubik', sans-serif;
-  color: rgb(49, 49, 49);
-  font-size: auto;
-  line-height: auto;
+  background-color: rgb(10, 25, 47);
+  color:rgb(136, 146, 176);
 }
 
 h1 {
-  color: rgb(37, 37, 37);
-  font-family: 'Rubik', sans-serif;
-  font-size: 32px;
+  color: rgb(255, 239, 100);
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.hero-title2 {
+   background-color: #CA4246;
+
+    background-image: linear-gradient(
+         20deg,
+         #CA4246 16.666%,
+         #E16541 16.666%,
+         #E16541 33.333%,
+         #F18F43 33.333%,
+         #F18F43 50%,
+         #8B9862 50%,
+         #8B9862 66.666%,
+         #476098 66.666%,
+         #476098 83.333%,
+         #A7489B 83.333%);
+
+   background-size: 100%;
+   background-repeat: repeat;
+
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+.hero-title2:hover {
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+      background-size: 650%;
+  }
+  40% {
+      background-size: 650%;
+  }
+  100% {
+      background-size: 100%;
+  }
+}
+
+@keyframes rainbow-text-simple-animation {
+  0% {
+      background-size: 100%;
+  }
+  80% {
+      background-size: 650%;
+  }
+  100% {
+      background-size: 650%;
+  }
 }
 
 h2 {
-  color: rgb(72, 72, 72);
-  font-size: 24px;
+  font-size: 70px;
+  font-weight: 600;
+  color: rgb(204, 214, 246);
+  font-family: 'Hind Siliguri', sans-serif;
+  margin: 0px;
 }
 
 h3 {
-  color: rgb(0, 151, 50);
+  color: rgb(136, 146, 176);
+  font-size: 60px;
+  font-family: 'Hind Siliguri', sans-serif;
+  margin: 0px;
 }
-
-a {
-  color: rgb(69, 69, 186);
-  text-decoration: none;
-}
-
-a:hover {
-  color: rgb(142, 142, 249);
-  text-decoration: underline;
-}
-
-img {
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 5px;
-  width: 150px;
-}
-
 .container {
-  width: 500px;
-  margin: 0 auto;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.card-white {
-  background: white;
-  padding: 30px;
-  margin: 15px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.202);
-  border-radius: 15px;
-}
-
-.list-inline > li {
-  display: inline-block;
-  padding: 0px 20px;
-  padding-left: 0px;
-}
-
-ul {
-  padding-left: 0px;
+  margin: 0px auto;
+  padding: 150px 0px;
+  max-width: 1000px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
 }
 
 .button {
-  color: rgb(224, 240, 255);
-  background-color: rgb(0, 1, 33);
-  border-radius: 5px;
-  padding: 10px;
-  border: none;
+  color: rgb(255, 239, 100);
+  border: 1px solid rgb(255, 239, 100);
+  border-radius: 3px;
+  padding: 20px;
+  background-color: transparent;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: normal;
+  font-size: 16px;
+  background: linear-gradient(to right, rgba(255, 239, 100, 0.203), rgba(255, 239, 100, 0) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
 }
 
-button:hover {
-  color:rgb(238, 238, 238);
-  background-color: rgb(46, 57, 67);
+.button:hover {
+  background-position: left bottom;
 }
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
+ul {
+  color: rgb(255, 239, 100);
+  font-family: 'Ubuntu Mono', monospace;
+  line-height: 30px;
+  padding-left: 5px;
 }
 
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
+p {
+  font-family: 'Hind Siliguri', sans-serif;
 }
 
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
+.sub-title {
+  font-size: 40px;
+  color: rgb(181, 192, 222);
+  margin-bottom: 60px;
+}
+
+
+
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+.rounded-social-buttons {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+}
+
+textarea {
+  resize: none;
+}
+
+.text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+white-space: nowrap;
+}
+
+.footer-credits {
+  font-family: 'Ubuntu Mono', monospace;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
 }
