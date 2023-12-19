@@ -4,12 +4,15 @@ body {
   margin: 8rem 5rem;
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
+  background-image: url();
 }
 
 .container {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-content: center;
+  justify-content: center;
 }
 
 .circle-red {
@@ -17,7 +20,7 @@ body {
   height: 37rem;
   width: 37rem;
   border-radius: 50%;
-  background: rgba(237, 0, 0, 0.59);
+  background: rgba(237, 0, 0, 0.49);
   filter: blur(100px);
   top: -21rem;
   left: 11rem;
@@ -60,7 +63,7 @@ body {
   height: 43rem;
   width: 43rem;
   border-radius: 50%;
-  background: rgba(5, 0, 237, 0.59);
+  background: rgba(5, 0, 237, 0.39);
   filter: blur(100px);
   top: -15rem;
   right: -30rem;
@@ -72,8 +75,9 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   justify-content: center;
+  justify-items: center;
 }
 
 .hero h1 {
@@ -136,6 +140,28 @@ body {
 .link-socials a {
   color: white;
 }
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill ul{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
 * {
   text-decoration: none;
+  list-style: none;
 }
