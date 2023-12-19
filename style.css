@@ -6,6 +6,11 @@ body {
   display: flex;
   justify-content: center;
   margin: 5rem 0;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar {
+display: none;
 }
 
 .container {
