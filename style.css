@@ -1,250 +1,105 @@
 body {
-  background-color: rgb(10, 25, 47);
-  color:rgb(136, 146, 176);
-}
-
-h1 {
-  color: rgb(255, 239, 100);
-  font-family: 'Ubuntu Mono', monospace;
-  font-weight: normal;
-  font-size: 16px;
-}
-
-.hero-title2 {
-   background-color: #CA4246;
-
-    background-image: linear-gradient(
-         20deg,
-         #CA4246 16.666%,
-         #E16541 16.666%,
-         #E16541 33.333%,
-         #F18F43 33.333%,
-         #F18F43 50%,
-         #8B9862 50%,
-         #8B9862 66.666%,
-         #476098 66.666%,
-         #476098 83.333%,
-         #A7489B 83.333%);
-
-   background-size: 100%;
-   background-repeat: repeat;
-
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-
-     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
-}
-
-.hero-title2:hover {
-  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
-}
-
-@keyframes rainbow-text-simple-animation-rev {
-  0% {
-      background-size: 650%;
-  }
-  40% {
-      background-size: 650%;
-  }
-  100% {
-      background-size: 100%;
-  }
-}
-
-@keyframes rainbow-text-simple-animation {
-  0% {
-      background-size: 100%;
-  }
-  80% {
-      background-size: 650%;
-  }
-  100% {
-      background-size: 650%;
-  }
-}
-
-h2 {
-  font-size: 70px;
-  font-weight: 600;
-  color: rgb(204, 214, 246);
-  font-family: 'Hind Siliguri', sans-serif;
-  margin: 0px;
-}
-
-h3 {
-  color: rgb(136, 146, 176);
-  font-size: 60px;
-  font-family: 'Hind Siliguri', sans-serif;
-  margin: 0px;
+  background-color: #1b1919;
+  color: rgb(255, 255, 255);
+  margin: 8rem 5rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
-  margin: 0px auto;
-  padding: 150px 0px;
-  max-width: 1000px;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 100vh;
-}
-
-.button {
-  color: rgb(255, 239, 100);
-  border: 1px solid rgb(255, 239, 100);
-  border-radius: 3px;
-  padding: 20px;
-  background-color: transparent;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-family: 'Ubuntu Mono', monospace;
-  font-weight: normal;
-  font-size: 16px;
-  transition: all .2s ease-out;
-}
-
-.button:hover {
-  background-color: rgba(255, 239, 100, 0.096);
-  background-position: left bottom;
-}
-
-ul {
-  color: rgb(255, 239, 100);
-  font-family: 'Ubuntu Mono', monospace;
-  line-height: 30px;
-  padding-left: 5px;
-}
-
-p {
-  font-family: 'Hind Siliguri', sans-serif;
-}
-
-.sub-title {
-  font-size: 40px;
-  color: rgb(181, 192, 222);
-  margin-bottom: 40px;
-}
-
-.profile-picture {
-  border: solid 3px rgba(255, 239, 100, 0.509);
-  height: 200px;
-  border-radius: 20%;
-  float: left;
-}
-
-.description {
-  float: right;
-  margin-left: 50px;
-}
-.svg-inline--fa {
-  vertical-align: -0.200em;
-}
-
-.rounded-social-buttons {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.rounded-social-buttons .social-button {
-  display: inline-block;
   position: relative;
-  cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
-  border: 0.125rem solid transparent;
+  display: flex;
+  align-content: center;
+}
+
+.circle-red {
+  position: absolute;
+  height: 37rem;
+  width: 37rem;
+  border-radius: 50%;
+  background: rgba(237, 0, 0, 0.59);
+  filter: blur(100px);
+  top: -21rem;
+  left: 11rem;
+  z-index: -99;
+}
+.circle-blue {
+  position: absolute;
+  height: 43rem;
+  width: 43rem;
+  border-radius: 50%;
+  background: rgba(5, 0, 237, 0.59);
+  filter: blur(100px);
+  top: -16rem;
+  right: -30rem;
+  z-index: -99;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
   padding: 0;
+}
+.hero h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+.hero h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.hero p {
+  font-size: 1.25rem;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+#profile-picture {
+  max-width: 30vw;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.link-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: #183fc9;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.link-socials a {
+  color: white;
+}
+* {
   text-decoration: none;
-  text-align: center;
-  color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
-  font-size: 25px;
-}
-
-.rounded-social-buttons .social-button.facebook {
-  background: #3b5998;
-}
-
-.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
-  color: #3b5998;
-  background: #fefefe;
-  border-color: #3b5998;
-}
-
-.rounded-social-buttons .social-button.twitter {
-  background: #55acee;
-}
-
-.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
-  color: #55acee;
-  background: #fefefe;
-  border-color: #55acee;
-}
-
-.rounded-social-buttons .social-button.linkedin {
-  background: #007bb5;
-}
-
-.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
-  color: #007bb5;
-  background: #fefefe;
-  border-color: #007bb5;
-}
-
-.rounded-social-buttons .social-button.youtube {
-  background: #bb0000;
-}
-
-.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
-  color: #bb0000;
-  background: #fefefe;
-  border-color: #bb0000;
-}
-
-.rounded-social-buttons .social-button.instagram {
-  background: #125688;
-}
-
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-  color: #125688;
-  background: #fefefe;
-  border-color: #125688;
-}
-
-textarea {
-  resize: none;
-}
-
-.text {
-color: white;
-font-size: 20px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-white-space: nowrap;
-}
-
-.footer-credits {
-  font-family: 'Ubuntu Mono', monospace;
-  text-align: center;
-  padding: 20px;
-  margin: 10px;
 }
