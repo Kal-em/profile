@@ -29,7 +29,7 @@ body {
   border-radius: 50%;
   background: rgba(5, 0, 237, 0.59);
   filter: blur(100px);
-  top: -16rem;
+  top: -15rem;
   right: -30rem;
   z-index: -99;
 }
