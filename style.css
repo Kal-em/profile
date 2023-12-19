@@ -1,13 +1,15 @@
 body {
   background-color: #1b1919;
   color: rgb(255, 255, 255);
-  margin: 8rem 5rem;
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;
-  background-image: url();
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
 }
 
 .container {
+  max-width: 1000px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -80,25 +82,25 @@ body {
   justify-items: center;
 }
 
-.hero h1 {
+h1 {
   font-size: 3rem;
   font-weight: 800;
   margin: 0;
   padding: 0;
 }
-.hero h3 {
+h3 {
   font-size: 1.5rem;
   font-weight: 800;
   margin: 0;
   padding: 0;
 }
-.hero h2 {
+h2 {
   font-size: 2.25rem;
   font-weight: 700;
   margin: 0;
   padding: 0;
 }
-.hero p {
+p {
   font-size: 1.25rem;
   font-weight: 200;
   margin: 0;
@@ -118,7 +120,7 @@ body {
   padding: 0;
 }
 #profile-picture {
-  max-width: 30vw;
+  max-width: 25vw;
 }
 
 .socials {
@@ -147,7 +149,7 @@ body {
   align-items: center;
 }
 
-.skill ul{
+.skill ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -155,11 +157,18 @@ body {
   margin: 0;
 }
 
-.project{
+.project {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
+}
+.project img{
+max-width: 25vw;
+}
+.project-placeholder {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 * {
   text-decoration: none;
